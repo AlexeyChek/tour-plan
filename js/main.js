@@ -43,3 +43,7 @@ function init() {
     controls: []
   });
 }
+
+$('.parallax-window').parallax({
+  imageSrc: '../img/newsletter-bg.jpg'
+});
