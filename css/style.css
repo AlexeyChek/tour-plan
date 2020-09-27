@@ -1006,6 +1006,7 @@ img {
   font-size: 14px;
   line-height: 19px;
   color: #ffffff;
+  cursor: pointer;
 }
 
 .newsletter {
