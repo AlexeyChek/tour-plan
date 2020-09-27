@@ -8,6 +8,11 @@
         width: 100%
         height: 100%
         object-fit: cover
+  .packages
+    grid-gap: 10px
+    &__body
+      &_first
+        padding-top: 36px
   .activities
     padding-bottom: 70px
     &-wrapper
@@ -48,6 +53,8 @@
     width: 340px
   .map
     width: 340px
+  .packages
+    grid-template: 500px 500px / 1fr 1fr
   .reviews
     &__title
       font-size: 30px
@@ -105,6 +112,33 @@
     width: 100%
   .map
     width: 100%
+  .packages
+    &-last
+      display: none
+    &-first
+      grid-column-start: span 1
+    &__container
+      &_first
+        grid-template: 50% 50% / 1fr
+    &__offer
+      padding: 4px 9px
+      font-size: 8px
+      line-height: 10px
+    &__body
+      padding: 30px 21px 30px 32px
+    &__rating
+      display: none
+    &__title
+      margin-bottom: 23px
+    &__text
+      display: none
+    &__info
+      margin-bottom: 24px
+    &__icon
+      margin-right: 8px
+    &__button
+      padding-left: 15px
+      padding-right: 15px
   .newsletter
     &-wrapper
       max-width: 700px
@@ -147,6 +181,8 @@
   .hotel
     &__slider
       margin-bottom: 20px
+  .packages
+    grid-template-columns: 1fr
   .activities
     &__title
       font-size: 18px
