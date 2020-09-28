@@ -57,6 +57,8 @@
       font-size: 12px
       line-height: 15px
   &__body
+    display: flex
+    flex-direction: column
     width: 100%
     height: 100%
     padding: 30px 21px 30px 32px
@@ -78,15 +80,16 @@
     font-weight: normal
     font-size: 14px
     line-height: 160.6%
+    margin-top: 0
     margin-bottom: 34px
   &__info
     display: flex
     flex-direction: column
     justify-content: space-between
     min-height: 67px
-    margin-bottom: 24px
-    &_first
-      margin-bottom: 37px
+    // margin-bottom: 24px
+    // &_first
+    //   margin-bottom: 37px
   &__icon
     width: 14px
     height: 14px
@@ -102,10 +105,13 @@
     font-size: 14px
     line-height: 18px
     text-decoration-line: line-through
+    margin-top: auto
+    margin-bottom: 0
   &__buy
     display: flex
     align-items: center
     justify-content: space-between
+    margin-bottom: 0
   &__new-price
     font-style: normal
     font-weight: bold

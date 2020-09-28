@@ -54,7 +54,7 @@
   .map
     width: 340px
   .packages
-    grid-template: 500px 500px / 1fr 1fr
+    grid-template: repeat(3, 500px) / 1fr 1fr
   .reviews
     &__title
       font-size: 30px
@@ -113,6 +113,7 @@
   .map
     width: 100%
   .packages
+    grid-template: repeat(2, 500px) / 1fr 1fr
     &-last
       display: none
     &-first
@@ -183,7 +184,7 @@
     &__slider
       margin-bottom: 20px
   .packages
-    grid-template-columns: 1fr
+    grid-template: repeat(4, 500px) / 1fr
   .activities
     &__title
       font-size: 18px
