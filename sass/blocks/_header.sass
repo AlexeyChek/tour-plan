@@ -8,6 +8,7 @@
     padding-bottom: 40px
     &__menu-button
       display: none
+      outline: none
   &__search
     margin-right: auto
     margin-left: 108px
@@ -70,4 +71,8 @@
     font-size: 14px
     line-height: 18px
     color: $text-color
-
+.navbar
+  &__search, &__user
+    &_mobile
+      &_visible
+        display: none

@@ -149,27 +149,92 @@
       left: 0
       right: auto
 @media (max-width: 760px)
+  body
+    padding-top: 78px
   .container
     max-width: 700px
     width: 92%
   .navbar
-    &__search, &__nav, &__user
+    .container
+      margin-top: 0
+    &_mobile
+      &_fixed
+        position: fixed
+        left: 0
+        right: 0
+        top: 0
+        z-index: 100
+    &__user
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+          flex-direction: column
+          margin-left: 0
+          margin-bottom: 17px
+    &__search
+      &_mobile
+        &_hidden
+          display: none
+        &_visible
+          display: flex
+          flex-direction: column
+          margin-left: 0
+          margin-bottom: 18px
+    &__menu 
+      &_mobile
+        display: flex
+        flex-direction: column
+        padding-top: 32px
+        & li:nth-child(n + 2)
+          margin-bottom: 17px
+    &__nav
       display: none
-  .menu-button
-    display: flex
-    width: 16px
-    height: 11px
-    padding: 0
-    align-items: center
-    justify-content: space-between
-    flex-direction: column 
-    border: none
-    background-color: $light
-    cursor: pointer
-    &__line
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 78px      
+      &_visible
+        position: fixed
+        display: flex
+        flex-direction: column
+        justify-content: center
+        left: 0
+        right: 0
+        bottom: 0
+        top: 72px
+    // &__item
+  .search
+    &__input
+      &_mobile
+        width: 100%
+  .menu
+    &-button
+      display: flex
       width: 16px
-      height: 1px
-      background-color: $text-color
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column 
+      border: none
+      background-color: $light
+      cursor: pointer
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $text-color
+  .user
+    &__avatar
+      &_mobile
+        margin-bottom: 11px
+    &__name
+      &_mobile
+        margin-left: 0
+        color: $light
+        margin-bottom: 9px
   .stars
     flex-basis: auto
   .hotel

@@ -47,3 +47,11 @@ function init() {
 $('.parallax-window').parallax({
   imageSrc: './img/newsletter-bg.jpg'
 });
+
+var menuButton = document.querySelector('.menu-button');
+menuButton.addEventListener('click', function () {
+  console.log("menu-button pressed");
+  document.querySelector('.navbar__nav').classList.toggle('navbar__nav_visible');
+  document.querySelector('.navbar__menu').classList.toggle('navbar__menu_mobile');
+
+});
