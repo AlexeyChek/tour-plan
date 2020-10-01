@@ -60,7 +60,7 @@
     </div>
     <!-- /.container -->
     <div class="navbar__nav">
-      <nav class="container">
+      <nav class="container navbar__container">
         <ul class="navbar__menu">
           <li class="navbar__item">
             <a href="#" class="user navbar__user navbar__user_mobile_visible">

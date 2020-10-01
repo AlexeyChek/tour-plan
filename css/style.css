@@ -1973,6 +1973,9 @@ img {
     bottom: 0;
     top: 72px;
   }
+  .navbar__container {
+    overflow: auto;
+  }
   .search__input_mobile {
     width: 100%;
   }
