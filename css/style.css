@@ -1361,6 +1361,19 @@ img {
 }
 
 .thankyou__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 26px;
   padding-bottom: 26px;
 }
@@ -1395,7 +1408,7 @@ img {
   background-color: #EC1F46;
   text-decoration: none;
   border: none;
-  color: inherit;
+  color: #ffffff;
   cursor: pointer;
   outline: none;
 }
