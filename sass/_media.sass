@@ -509,3 +509,15 @@
         margin-bottom: 28px
       & div:last-child        
         margin-bottom: 0
+@media (max-height: 400px)
+  .modal
+    &__dialog
+      overflow: auto
+      top: 0
+      bottom: 0
+      transform: translate(-50%, 0)
+      padding-top: 28px
+    &__content
+      overflow: auto
+    &__close
+      top: 9px
