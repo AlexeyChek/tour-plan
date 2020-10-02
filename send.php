@@ -20,9 +20,9 @@ if (count($_POST) == 3) {
 } else if (count($_POST) == 1) {
     $email = $_POST['email'];
 
-    $title = "Новая подписка Best Tour Plan";
+    $title = "Новое обращение Best Tour Plan";
     $body = "
-    <h2>Новая подписка</h2>
+    <h2>Новая подписка с адреса</h2>
     <b>E-mail:</b> $email<br>
     ";
 
@@ -34,7 +34,7 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    //$mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
@@ -46,7 +46,7 @@ try {
     $mail->setFrom('sphinxsk@yandex.ru', 'Best Tour Plan'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
-    $mail->addAddress('sphinxsk@gmail.com');  
+    $mail->addAddress('sphinxsk@yandex.ru');  
     // $mail->addAddress('youremail@gmail.com'); // Ещё один, если нужен
 
 // Отправка сообщения
@@ -64,4 +64,8 @@ else {$result = "error";}
 }
 
 // Отображение результата
+// var_dump($_POST);
+// echo $title;
+// echo $body;
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 header('Location: thankyou.php');
