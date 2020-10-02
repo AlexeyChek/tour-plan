@@ -2538,7 +2538,7 @@ img {
   }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 500px) {
   .modal__dialog {
     overflow: auto;
     top: 0;
