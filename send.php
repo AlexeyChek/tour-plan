@@ -1,4 +1,5 @@
 <?php
+include ('password.php');
 // Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
@@ -25,7 +26,20 @@ if (count($_POST) == 3) {
     <h2>Новая подписка с адреса</h2>
     <b>E-mail:</b> $email<br>
     ";
+} else if (count($_POST) == 4) {
+    $name = $_POST['name'];
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $message = $_POST['message'];
 
+    $title = "Новое обращение Best Tour Plan";
+    $body = "
+    <h2>Новое обращение</h2>
+    <b>Имя:</b> $name<br>
+    <b>Телефон:</b> $phone<br><br>
+    <b>E-mail:</b> $email<br>
+    <b>Сообщение:</b><br>$message
+    ";
 }
 
 // Настройки PHPMailer
@@ -40,7 +54,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'sphinxsk'; // Логин на почте
-    $mail->Password   = '******'; // Пароль на почте
+    $mail->Password   = $password; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('sphinxsk@yandex.ru', 'Best Tour Plan'); // Адрес самой почты и имя отправителя

@@ -118,7 +118,7 @@
           <form action="send.php" method="POST" class="footer__form">
             <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
             <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
-            <textarea placeholder="Message" class="footer__message" name="message"></textarea>
+            <textarea placeholder="Message" class="message footer__message" name="message"></textarea>
             <div class="footer__button-wrapper">
               <button class="button footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -142,10 +142,35 @@
     </div>
     <!-- /.container -->
   </footer>
+  <div class="modal">
+    <div class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+      <a href="#" class="modal__close">
+        <img src="img/close.svg" alt="Icon: close">
+      </a>
+      <div class="modal__contact-form">
+        <h3 class="modal__title modal__title_form">Booking</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
+          <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
+          <input type="text" class="input modal__input" placeholder="Email*" name="email">
+          <textarea placeholder="Message" class="message modal__message" name="message"></textarea>
+          <div class="modal__button-wrapper">
+            <button class="button modal__button" type="submit">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <!-- /.modal__dialog -->
+  </div>
+  <!-- /.modal -->
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
   <script src="js/main.js"></script>
-</body>
+  </body>
 
-</html>
+  </html>

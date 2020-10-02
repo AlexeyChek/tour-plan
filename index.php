@@ -100,7 +100,7 @@
               </a>
             </div>
             <!-- /.booking__call-center -->
-            <button class="button booking__button">View Other Options</button>
+            <button data-toggle="modal" class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
           <div id="map" class="map"></div>

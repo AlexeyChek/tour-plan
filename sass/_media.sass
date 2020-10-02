@@ -430,6 +430,10 @@
     width: 100%
     margin: auto
     margin-bottom: 20px
+  .modal
+    &__dialog
+      padding: 20px
+      min-width: 90%
 @media (max-width: 360px)
   .activities
     padding-top: 26px
@@ -438,6 +442,12 @@
       text-align: start
       margin-left: 0
       margin-bottom: 37px
+  .modal
+    &__button
+      &-wrapper
+        flex-direction: column-reverse
+    &__info
+      padding-bottom: 10px
 @media (max-width: 320px)
   .container
     width: 280px
