@@ -1,7 +1,9 @@
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer-wrapper">
-        <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+        <a href="index.php" class="footer__logo">
+          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo">
+        </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
           <ul class="footer__ul">
