@@ -1673,6 +1673,11 @@ img {
   max-height: 22px;
 }
 
+.contact-link {
+  text-decoration: none;
+  color: #BDBDBD;
+}
+
 .modal__overlay {
   position: fixed;
   top: 0;

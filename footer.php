@@ -104,13 +104,17 @@
             </li>
             <li class="footer__item footer__item_contact">
               <img class="footer__icon" src="img/phone-call-footer.svg" alt="Icon: phone call">
-              Tel (business hours) : 269 1500<br />
-              Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br />
-              Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+              <span>
+                Tel (business hours) : <a href="tel:269 1500" class="contact-link">269 1500</a><br />
+                Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="contact-link">52-56-61-38</a> (08:00
+                am – 20:00 pm)<br />
+                Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="contact-link">52-56-61-38</a> (08:00 am – 14:00
+                pm)
+              </span>
             </li>
             <li class="footer__item footer__item_contact">
               <img class="footer__icon" src="img/email.svg" alt="Icon: email">
-              cherly.lawson@example.com
+              <a href="mailto:cherly.lawson@example.com" class="contact-link">cherly.lawson@example.com</a>
             </li>
           </ul>
         </div>
