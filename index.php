@@ -6,7 +6,7 @@
           <a href="#" class="breadcrumb-list__link">Home</a>
         </li>
         <li class="breadcrumb-list__item">
-          <a href="#" class="breadcrumb-list__link">Flash Offers</a>
+          <span class="breadcrumb-list__link">Flash Offers</span>
         </li>
         <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
       </ul>
@@ -121,7 +121,7 @@
           <div class="packages__container packages__container_first">
             <div class="packages__photo packages__photo_first">
               <img src="img/other-package-1.jpg" alt="Hotel Blue Haven" class="packages__image packages__image_first" />
-              <a href="#" class="packages__offer packages__offer_first">Flash Offer</a>
+              <span class="packages__offer packages__offer_first">Flash Offer</span>
             </div>
             <div class="packages__body packages__body_first">
               <div class="packages__rating">
@@ -173,7 +173,7 @@
           <div class="packages__container">
             <div class="packages__photo">
               <img src="img/other-package-2.jpg" alt="LUX* Belle Mare" class="packages__image" />
-              <a href="#" class="packages__offer">Flash Offer</a>
+              <span class="packages__offer">Flash Offer</span>
             </div>
             <div class="packages__body">
               <h3 class="packages__title">LUX* Belle Mare</h3>
@@ -208,7 +208,7 @@
           <div class="packages__container">
             <div class="packages__photo">
               <img src="img/other-package-3.jpg" alt="White Palace" class="packages__image" />
-              <a href="#" class="packages__offer">Flash Offer</a>
+              <span class="packages__offer">Flash Offer</span>
             </div>
             <div class="packages__body">
               <h3 class="packages__title">White Palace</h3>
@@ -243,7 +243,7 @@
           <div class="packages__container">
             <div class="packages__photo">
               <img src="img/other-package-4.jpg" alt="Luxury Place" class="packages__image" />
-              <a href="#" class="packages__offer">Flash Offer</a>
+              <span class="packages__offer">Flash Offer</span>
             </div>
             <div class="packages__body">
               <h3 class="packages__title">Luxury Place</h3>
@@ -278,7 +278,7 @@
           <div class="packages__container">
             <div class="packages__photo">
               <img src="img/other-package-5.jpg" alt="Hotel Five Star" class="packages__image" />
-              <a href="#" class="packages__offer">Flash Offer</a>
+              <span class="packages__offer">Flash Offer</span>
             </div>
             <div class="packages__body">
               <h3 class="packages__title">Hotel Five Star</h3>

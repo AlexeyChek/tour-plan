@@ -50,8 +50,8 @@ $(document).ready(function () {
   });
 
   var menuButton = document.querySelector('.menu-button');
+
   menuButton.addEventListener('click', function () {
-    console.log("menu-button pressed");
     document.querySelector('.navbar__nav').classList.toggle('navbar__nav_visible');
     document.querySelector('.navbar__menu').classList.toggle('navbar__menu_mobile');
   });
@@ -60,18 +60,30 @@ $(document).ready(function () {
   var closeModalButton = $(".modal__close");
   var modalOverlay = $(".modal__overlay")
   var modalDialog = $(".modal__dialog")
+  var packagesButton = document.querySelectorAll('.packages__button');
+  var cardButton = document.querySelectorAll('.card__button');
 
-  modalButton.on('click', () => {
+  const openModal = () => {
     modalOverlay.addClass('modal__overlay_visible');
     modalDialog.addClass('modal__dialog_visible');
-  });
+  };
 
   const closeModal = () => {
-    console.log('closeModal');
     event.preventDefault();
     modalOverlay.removeClass('modal__overlay_visible');
     modalDialog.removeClass('modal__dialog_visible');
   };
+
+  modalButton.on('click', openModal);
+
+  packagesButton.forEach((button) => {
+    button.addEventListener('click', openModal);
+  });
+
+  cardButton.forEach((btn) => {
+    btn.addEventListener('click', openModal);
+  });
+
 
   closeModalButton.on('click', closeModal);
   modalOverlay.on('click', closeModal);
