@@ -103,7 +103,9 @@
             <button data-toggle="modal" class="button booking__button">View Other Options</button>
           </div>
           <!-- /.booking -->
-          <div id="map" class="map"></div>
+          <div id="map" class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6748415111024!2d29.01923291580142!3d40.98860037930264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU5JzE5LjAiTiAyOcKwMDEnMTcuMSJF!5e0!3m2!1sru!2sru!4v1601810053924!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
           <!-- /.map -->
         </div>
         <!-- /.hotel-right -->
