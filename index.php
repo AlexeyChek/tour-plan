@@ -322,7 +322,7 @@
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
       <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="email"/>
+        <input type="email" class="subscribe__input form" placeholder="Your email address" name="email"/>
         <button class="subscribe__button">Send</button>
       </form>
     </div>

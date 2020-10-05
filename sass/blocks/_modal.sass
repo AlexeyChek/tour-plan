@@ -52,10 +52,12 @@
     text-align: center
   &__input
     width: 100%
-    margin-bottom: 15px
+    &:not(:first-child)
+      margin-top: 15px
   &__message
     width: 100%
     min-height: 123px
+    margin-top: 15px
     margin-bottom: 15px
   &__button
     min-width: 160px

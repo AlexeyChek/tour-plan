@@ -72,4 +72,34 @@ $(document).ready(function () {
       closeModal();
     };
   });
+
+  $('.form').each(function () {
+    $(this).validate({
+      rules: {
+        name: "required",
+        email: {
+          required: true,
+          email: true
+        },
+        phone: {
+          required: true,
+          tel: true
+        }
+      },
+      messages: {
+        name: "Please specify your name",
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "We need your phone number to contact you",
+          tel: "Your phone number must be in the true format"
+        }
+      },
+
+    });
+  });
+
+  $('.tel').mask('+7 (000) 000-0000');
 });

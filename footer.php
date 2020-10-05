@@ -121,9 +121,13 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title_form">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input_group">
+              <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input tel" placeholder="Phone Number*" name="phone" required>
+            </div>
             <textarea placeholder="Message" class="message footer__message" name="message"></textarea>
             <div class="footer__button-wrapper">
               <button class="button footer__button" type="submit">Send</button>
@@ -158,10 +162,10 @@
         </a>
         <div class="modal__contact-form">
           <h3 class="modal__title modal__title_form">Booking</h3>
-          <form action="send.php" method="POST" class="modal__form">
-            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone">
-            <input type="text" class="input modal__input" placeholder="Email*" name="email">
+          <form action="send.php" method="POST" class="modal__form form">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+            <input type="tel" class="input modal__input tel" placeholder="Phone Number*" name="phone" required>
+            <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
             <textarea placeholder="Message" class="message modal__message" name="message"></textarea>
             <div class="modal__button-wrapper">
               <button class="button modal__button" type="submit">Send</button>
@@ -177,6 +181,8 @@
   <script src="js/swiper-bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/parallax.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
   </body>
 

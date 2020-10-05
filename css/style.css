@@ -384,6 +384,10 @@ img {
   border: none;
 }
 
+.error {
+  color: #EC1F46;
+}
+
 .navbar {
   background-color: #ffffff;
 }
@@ -1748,12 +1752,16 @@ img {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+}
+
+.modal__input:not(:first-child) {
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
