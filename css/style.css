@@ -1594,9 +1594,16 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input_group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .footer__message {
@@ -2375,7 +2382,7 @@ img {
   .footer__form {
     max-width: 92%;
   }
-  .footer__input {
+  .footer__input_group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }

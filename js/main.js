@@ -83,7 +83,7 @@ $(document).ready(function () {
         },
         phone: {
           required: true,
-          tel: true
+          minlength: 17
         }
       },
       messages: {
@@ -94,7 +94,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "We need your phone number to contact you",
-          tel: "Your phone number must be in the true format"
+          minlength: "Your phone number must be in the true format"
         }
       },
 

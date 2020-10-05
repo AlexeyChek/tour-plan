@@ -125,7 +125,7 @@
             <div class="footer__input_group">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
             </div>
-            <div class="footer__input-group">
+            <div class="footer__input_group">
               <input type="tel" class="input footer__input tel" placeholder="Phone Number*" name="phone" required>
             </div>
             <textarea placeholder="Message" class="message footer__message" name="message"></textarea>
