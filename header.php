@@ -9,6 +9,7 @@
     href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css" />
 
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />

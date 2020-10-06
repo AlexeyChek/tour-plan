@@ -102,4 +102,6 @@ $(document).ready(function () {
   });
 
   $('.tel').mask('+7 (000) 000-0000');
+
+  AOS.init();
 });

@@ -122,7 +122,7 @@
   <div class="container">
     <h2 class="other-packages__title">Other Packages</h2>
     <div class="packages">
-      <div class="packages-сard packages-first">
+      <div class="packages-сard packages-first" data-aos="fade-up" data-aos-delay="100">
         <div class="packages__container packages__container_first">
           <div class="packages__photo packages__photo_first">
             <img src="img/other-package-1.jpg" alt="Hotel Blue Haven" class="packages__image packages__image_first" />
@@ -174,7 +174,7 @@
       </div>
       <!-- /.packages-сard 1-->
 
-      <div class="packages-сard">
+      <div class="packages-сard" data-aos="fade-up" data-aos-delay="200">
         <div class="packages__container">
           <div class="packages__photo">
             <img src="img/other-package-2.jpg" alt="LUX* Belle Mare" class="packages__image" />
@@ -209,7 +209,7 @@
       </div>
       <!-- /.packages-сard 2-->
 
-      <div class="packages-сard">
+      <div class="packages-сard" data-aos="fade-up" data-aos-delay="300">
         <div class="packages__container">
           <div class="packages__photo">
             <img src="img/other-package-3.jpg" alt="White Palace" class="packages__image" />
@@ -244,7 +244,7 @@
       </div>
       <!-- /.packages-сard 3-->
 
-      <div class="packages-сard">
+      <div class="packages-сard" data-aos="fade-up" data-aos-delay="400">
         <div class="packages__container">
           <div class="packages__photo">
             <img src="img/other-package-4.jpg" alt="Luxury Place" class="packages__image" />
@@ -279,7 +279,7 @@
       </div>
       <!-- /.packages-сard 4-->
 
-      <div class="packages-сard packages-last">
+      <div class="packages-сard packages-last" data-aos="fade-up" data-aos-delay="500">
         <div class="packages__container">
           <div class="packages__photo">
             <img src="img/other-package-5.jpg" alt="Hotel Five Star" class="packages__image" />
@@ -444,25 +444,25 @@
   <div class="container">
     <h2 class="activities__title">Other Activities</h2>
     <div class="activities-wrapper">
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="100">
         <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image" />
         <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="200">
         <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image" />
         <h3 class="card__title">Gymkhana club golf course</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="300">
         <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image" />
         <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-delay="400">
         <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image" />
         <h3 class="card__title">The blue marine discovery quest</h3>
         <button class="card__button">Book Now</button>
