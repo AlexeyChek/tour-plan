@@ -90,11 +90,11 @@ $(document).ready(function () {
         name: "Please specify your name",
         email: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Please enter a valid email address"
         },
         phone: {
           required: "We need your phone number to contact you",
-          minlength: "Your phone number must be in the true format"
+          minlength: "Please enter a valid phone number"
         }
       },
 

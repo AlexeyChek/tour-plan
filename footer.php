@@ -163,9 +163,15 @@
         <div class="modal__contact-form">
           <h3 class="modal__title modal__title_form">Booking</h3>
           <form action="send.php" method="POST" class="modal__form form">
-            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
-            <input type="tel" class="input modal__input tel" placeholder="Phone Number*" name="phone" required>
-            <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+            <div class="modal__input_group">
+              <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required>
+            </div>
+            <div class="modal__input_group">
+              <input type="tel" class="input modal__input tel" placeholder="Phone Number*" name="phone" required>
+            </div>
+            <div class="modal__input_group">
+              <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+            </div>
             <textarea placeholder="Message" class="message modal__message" name="message"></textarea>
             <div class="modal__button-wrapper">
               <button class="button modal__button" type="submit">Send</button>
