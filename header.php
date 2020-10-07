@@ -30,7 +30,14 @@
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
 
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=e574bc37-3b23-4255-bce8-56cce4978694&lang=en_US"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=e574bc37-3b23-4255-bce8-56cce4978694&lang=en_US" defer></script>
+  <script src="js/swiper-bundle.min.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" defer></script>
+  <script src="js/parallax.min.js" defer></script>
+  <script src="js/jquery.validate.min.js" defer></script>
+  <script src="js/jquery.mask.min.js" defer></script>
+  <script src="js/aos.js" defer></script>
+  <script src="js/main.min.js" defer></script>
 </head>
 
 <body>
