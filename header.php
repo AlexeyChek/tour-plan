@@ -41,7 +41,7 @@
           <img src="img/horizontal-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
         </a>
         <form action="#" class="search navbar__search navbar__search_mobile_hidden">
-          <input type="text" class="search__input" placeholder="Search Location" />
+          <input type="text" class="search__input" placeholder="Search Location" autofocus />
           <button class="search__button">
             <img src="img/search.svg" alt="Icon: search" />
           </button>
