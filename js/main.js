@@ -82,7 +82,10 @@ $(document).ready(function () {
   $('.form').each(function () {
     $(this).validate({
       rules: {
-        name: "required",
+        name: {
+          required: true,
+          minlength: 2
+        },
         email: {
           required: true,
           email: true

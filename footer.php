@@ -191,7 +191,7 @@
   <script defer src="js/jquery.validate.min.js"></script>
   <script defer src="js/jquery.mask.min.js" ></script>
   <script defer src="js/aos.js" ></script>
-  <script defer src="js/main.min.js" ></script>
+  <script defer src="js/main.js" ></script>
   </body>
 
   </html>
