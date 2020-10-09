@@ -1,8 +1,9 @@
+  <?php if ( substr_count( $_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip' ) ) ob_start("ob_gzhandler"); else ob_start(); ?> 
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer-wrapper">
         <a href="index.php" class="footer__logo">
-          <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" class="logo">
+          <img data-src="img/vertical-logo.svg" src="#" alt="Logo: Best Tour Plan" class="logo">
         </a>
         <div class="footer__list footer__categories">
           <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -61,14 +62,14 @@
         <div class="footer__social-network">
           <h3 class="footer__title footer__title_inline">Social Network</h3>
           <div class="footer__social-links">
-            <a href="#" class="footer__link">
-              <img src="img/facebook.svg" alt="Icon: facebook">
+            <a href="https://www.facebook.com" class="footer__link">
+              <img data-src="img/facebook.svg" src="#" alt="Icon: facebook">
             </a>
-            <a href="#" class="footer__link">
-              <img src="img/youtube.svg" alt="Icon: youtube">
+            <a href="https://www.youtube.com" class="footer__link">
+              <img data-src="img/youtube.svg" src="#" alt="Icon: youtube">
             </a>
-            <a href="#" class="footer__link">
-              <img src="img/instagram.svg" alt="Icon: instagram">
+            <a href="https://www.instagram.com" class="footer__link">
+              <img data-src="img/instagram.svg" src="#" alt="Icon: instagram">
             </a>
           </div>
           <!-- /.footer__social-links -->
@@ -99,21 +100,21 @@
           </p>
           <ul class="footer__ul">
             <li class="footer__item footer__item_contact">
-              <img class="footer__icon" src="img/map-marker.svg" alt="Icon: map">
+              <img class="footer__icon" data-src="img/map-marker.svg" src="#" alt="Icon: map">
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
             <li class="footer__item footer__item_contact">
-              <img class="footer__icon" src="img/phone-call-footer.svg" alt="Icon: phone call">
+              <img class="footer__icon" data-src="img/phone-call-footer.svg" src="#" alt="Icon: phone call">
               <span>
-                Tel (business hours) : <a href="tel:269 1500" class="contact-link">269 1500</a><br />
-                Tel (hotline) Monday - Saturday: <a href="tel:52-56-61-38" class="contact-link">52-56-61-38</a> (08:00
+                Tel (business hours) : <a href="tel:2691500" class="contact-link">269 1500</a><br />
+                Tel (hotline) Monday - Saturday: <a href="tel:52566138" class="contact-link">52-56-61-38</a> (08:00
                 am – 20:00 pm)<br />
-                Tel (hotline) Sunday: <a href="tel:52-56-61-38" class="contact-link">52-56-61-38</a> (08:00 am – 14:00
+                Tel (hotline) Sunday: <a href="tel:52566138" class="contact-link">52-56-61-38</a> (08:00 am – 14:00
                 pm)
               </span>
             </li>
             <li class="footer__item footer__item_contact">
-              <img class="footer__icon" src="img/email.svg" alt="Icon: email">
+              <img class="footer__icon" data-src="img/email.svg" src="#" alt="Icon: email">
               <a href="mailto:cherly.lawson@example.com" class="contact-link">cherly.lawson@example.com</a>
             </li>
           </ul>
@@ -148,7 +149,7 @@
           <a href="#" class="rules__link">Cancellation policy</a>
         </li>
       </ul>
-      <img src="img/partners.png" alt="partners" class="partners">
+      <img data-src="img/partners.png" src="#" alt="partners" class="partners">
     </div>
     <!-- /.container -->
   </footer>
@@ -158,7 +159,7 @@
     <div class="modal__dialog">
       <div class="modal__content">
         <a href="#" class="modal__close">
-          <img src="img/close.svg" alt="Icon: close">
+          <img data-src="img/close.svg" src="#" alt="Icon: close">
         </a>
         <div class="modal__contact-form">
           <h3 class="modal__title modal__title_form">Booking</h3>
@@ -184,6 +185,13 @@
     <!-- /.modal__dialog -->
   </div>
   <!-- /.modal -->
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/jquery.min.js"></script>
+  <script defer src="js/parallax.min.js" ></script>
+  <script defer src="js/jquery.validate.min.js"></script>
+  <script defer src="js/jquery.mask.min.js" ></script>
+  <script defer src="js/aos.js" ></script>
+  <script defer src="js/main.min.js" ></script>
   </body>
 
   </html>

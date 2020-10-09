@@ -1,3 +1,4 @@
+<?php if ( substr_count( $_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip' ) ) ob_start("ob_gzhandler"); else ob_start(); ?> 
 <?php include('header.php')?>
 <nav class="breadcrumb">
   <div class="container">
@@ -53,16 +54,16 @@
             <img class="swiper-slide__image hotel-slider__image" src="img/slide-1.jpg" alt="slide" />
           </div>
           <div class="swiper-slide hotel-slider__item">
-            <img class="swiper-slide__image hotel-slider__image" src="img/slide-2.jpg" alt="slide" />
+            <img class="swiper-slide__image hotel-slider__image" data-src="img/slide-2.jpg" src="#" alt="slide" />
           </div>
           <div class="swiper-slide hotel-slider__item">
-            <img class="swiper-slide__image hotel-slider__image" src="img/slide-3.jpg" alt="slide" />
+            <img class="swiper-slide__image hotel-slider__image" data-src="img/slide-3.jpg" src="#" alt="slide" />
           </div>
           <div class="swiper-slide hotel-slider__item">
-            <img class="swiper-slide__image hotel-slider__image" src="img/slide-4.jpg" alt="slide" />
+            <img class="swiper-slide__image hotel-slider__image" data-src="img/slide-4.jpg" src="#" alt="slide" />
           </div>
           <div class="swiper-slide hotel-slider__item">
-            <img class="swiper-slide__image hotel-slider__image" src="img/slide-5.jpg" alt="slide" />
+            <img class="swiper-slide__image hotel-slider__image" data-src="img/slide-5.jpg" src="#" alt="slide" />
           </div>
         </div>
         <!-- If we need navigation buttons -->
@@ -103,11 +104,8 @@
           <button data-toggle="modal" class="button booking__button">View Other Options</button>
         </div>
         <!-- /.booking -->
-        <div id="map" class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6748415111024!2d29.01923291580142!3d40.98860037930264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU5JzE5LjAiTiAyOcKwMDEnMTcuMSJF!5e0!3m2!1sru!2sru!4v1601810053924!5m2!1sru!2sru"
-            width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+        <div id="map" class="map" data-map="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.6748415111024!2d29.01923291580142!3d40.98860037930264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDU5JzE5LjAiTiAyOcKwMDEnMTcuMSJF!5e0!3m2!1sru!2sru!4v1601810053924!5m2!1sru!2sru">
+          <img alt="google-maps" src="img/google-map.JPG" class="google-map-img">
         </div>
         <!-- /.map -->
       </div>
@@ -125,7 +123,7 @@
       <div class="packages-сard packages-first" data-aos="fade-up" data-aos-delay="100">
         <div class="packages__container packages__container_first">
           <div class="packages__photo packages__photo_first">
-            <img src="img/other-package-1.jpg" alt="Hotel Blue Haven" class="packages__image packages__image_first" />
+            <img data-src="img/other-package-1.jpg" src="#" alt="Hotel Blue Haven" class="packages__image packages__image_first" />
             <span class="packages__offer packages__offer_first">Flash Offer</span>
           </div>
           <div class="packages__body packages__body_first">
@@ -177,7 +175,7 @@
       <div class="packages-сard" data-aos="fade-up" data-aos-delay="200">
         <div class="packages__container">
           <div class="packages__photo">
-            <img src="img/other-package-2.jpg" alt="LUX* Belle Mare" class="packages__image" />
+            <img src="img/other-package-2.jpg" src="#" alt="LUX* Belle Mare" class="packages__image" />
             <span class="packages__offer">Flash Offer</span>
           </div>
           <div class="packages__body">
@@ -212,7 +210,7 @@
       <div class="packages-сard" data-aos="fade-up" data-aos-delay="300">
         <div class="packages__container">
           <div class="packages__photo">
-            <img src="img/other-package-3.jpg" alt="White Palace" class="packages__image" />
+            <img data-src="img/other-package-3.jpg" src="#" alt="White Palace" class="packages__image" />
             <span class="packages__offer">Flash Offer</span>
           </div>
           <div class="packages__body">
@@ -247,7 +245,7 @@
       <div class="packages-сard" data-aos="fade-up" data-aos-delay="400">
         <div class="packages__container">
           <div class="packages__photo">
-            <img src="img/other-package-4.jpg" alt="Luxury Place" class="packages__image" />
+            <img data-src="img/other-package-4.jpg" src="#" alt="Luxury Place" class="packages__image" />
             <span class="packages__offer">Flash Offer</span>
           </div>
           <div class="packages__body">
@@ -282,7 +280,7 @@
       <div class="packages-сard packages-last" data-aos="fade-up" data-aos-delay="500">
         <div class="packages__container">
           <div class="packages__photo">
-            <img src="img/other-package-5.jpg" alt="Hotel Five Star" class="packages__image" />
+            <img data-src="img/other-package-5.jpg" src="#" alt="Hotel Five Star" class="packages__image" />
             <span class="packages__offer">Flash Offer</span>
           </div>
           <div class="packages__body">
@@ -340,7 +338,7 @@
         <div class="swiper-slide">
           <div class="reviews-slider__item">
             <div class="reviews-slider__profile">
-              <img src="img/reviews-avatar.jpg" alt="Photo: Megan Fox" class="reviews-slider__avatar" />
+              <img data-src="img/reviews-avatar.jpg" src="#" alt="Photo: Megan Fox" class="reviews-slider__avatar" />
               <h3 class="reviews-slider__username">Megan Fox</h3>
               <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
               <div class="reviews-slider__rating">
@@ -371,7 +369,7 @@
         <div class="swiper-slide">
           <div class="reviews-slider__item">
             <div class="reviews-slider__profile">
-              <img src="img/reviews-avatar-2.jpg" alt="Photo: John Smitt" class="reviews-slider__avatar" />
+              <img data-src="img/reviews-avatar-2.jpg" src="#" alt="Photo: John Smitt" class="reviews-slider__avatar" />
               <h3 class="reviews-slider__username">John Smitt</h3>
               <span class="reviews-slider__date">Stayed 13 Dec, 2018</span>
               <div class="reviews-slider__rating">
@@ -402,7 +400,7 @@
         <div class="swiper-slide">
           <div class="reviews-slider__item">
             <div class="reviews-slider__profile">
-              <img src="img/reviews-avatar-3.jpg" alt="Photo: Mega Box" class="reviews-slider__avatar" />
+              <img data-src="img/reviews-avatar-3.jpg" src="#" alt="Photo: Mega Box" class="reviews-slider__avatar" />
               <h3 class="reviews-slider__username">Mega Box</h3>
               <span class="reviews-slider__date">Stayed 18 Jun, 2020</span>
               <div class="reviews-slider__rating">
@@ -445,25 +443,25 @@
     <h2 class="activities__title">Other Activities</h2>
     <div class="activities-wrapper">
       <div class="card" data-aos="fade-up" data-aos-delay="100">
-        <img src="img/activity-1.jpg" alt="The curious corner of chamarel" class="card__image" />
+        <img data-src="img/activity-1.jpg" src="#" alt="The curious corner of chamarel" class="card__image" />
         <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <img src="img/activity-2.jpg" alt="Gymkhana club golf course" class="card__image" />
+        <img data-src="img/activity-2.jpg" src="#" alt="Gymkhana club golf course" class="card__image" />
         <h3 class="card__title">Gymkhana club golf course</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card" data-aos="fade-up" data-aos-delay="300">
-        <img src="img/activity-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image" />
+        <img data-src="img/activity-3.jpg" src="#" alt="Tamarind falls hiking trip - full day" class="card__image" />
         <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
         <button class="card__button">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card" data-aos="fade-up" data-aos-delay="400">
-        <img src="img/activity-4.jpg" alt="The blue marine discovery quest" class="card__image" />
+        <img data-src="img/activity-4.jpg" src="#" alt="The blue marine discovery quest" class="card__image" />
         <h3 class="card__title">The blue marine discovery quest</h3>
         <button class="card__button">Book Now</button>
       </div>

@@ -1,17 +1,13 @@
+<?php if ( substr_count( $_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip' ) ) ob_start("ob_gzhandler"); else ob_start(); ?> 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Best Tour Plan - Hotel Booking</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&family=Nunito:wght@400;600;800&display=swap"
-    rel="stylesheet" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css" />
-
   <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
   <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png" />
   <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png" />
@@ -29,17 +25,7 @@
   <meta name="msapplication-TileColor" content="#ffffff" />
   <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
   <meta name="theme-color" content="#ffffff" />
-
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=e574bc37-3b23-4255-bce8-56cce4978694&lang=en_US" defer></script>
-  <script src="js/swiper-bundle.min.js" defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" defer></script>
-  <script src="js/parallax.min.js" defer></script>
-  <script src="js/jquery.validate.min.js" defer></script>
-  <script src="js/jquery.mask.min.js" defer></script>
-  <script src="js/aos.js" defer></script>
-  <script src="js/main.min.js" defer></script>
 </head>
-
 <body>
   <header class="navbar navbar_mobile_fixed">
     <div class="container">
@@ -70,17 +56,17 @@
     <div class="navbar__nav">
       <nav class="container navbar__container">
         <ul class="navbar__menu">
-          <li class="navbar__item">
+          <li class="navbar__item navbar__item_mobile_visible">
             <a href="#" class="user navbar__user navbar__user_mobile_visible">
-              <img src="img/user-avatar.jpg" alt="Avatar: Nathan" class="user__avatar user__avatar_mobile" />
+              <img data-src="img/user-avatar.jpg" src="#" alt="Avatar: Nathan" class="user__avatar user__avatar_mobile" />
               <span class="user__name user__name_mobile">Nathan</span>
             </a>
           </li>
-          <li class="navbar__item">
+          <li class="navbar__item navbar__item_mobile_visible">
             <form action="#" class="search navbar__search navbar__search_mobile_visible">
               <input type="text" class="search__input search__input_mobile" placeholder="Search Location" />
               <button class="search__button">
-                <img src="img/search.svg" alt="Icon: search" />
+                <img data-src="img/search.svg" src="#" alt="Icon: search" />
               </button>
             </form>
           </li>

@@ -10,7 +10,13 @@ $(document).ready(function () {
       enabled: true,
       onlyInViewport: false,
     },
-  })
+  });
+
+  $(".map").click(function () {
+    var map = $(this).attr("data-map");
+    $(this).html('<iframe class="google-map" src="' + map + 'style="border:0;" allowfullscreen="" aria-hidden="false" tabindex = "0" > < /iframe>');
+  });
+
 
   var rewiewsSlider = new Swiper('.reviews-slider', {
     loop: true,
@@ -22,7 +28,7 @@ $(document).ready(function () {
       enabled: true,
       onlyInViewport: false,
     },
-  })
+  });
 
   $('.parallax-window').parallax({
     imageSrc: './img/newsletter-bg.jpg'
@@ -105,5 +111,12 @@ $(document).ready(function () {
 
   AOS.init({
     disable: 'mobile',
+  });
+
+  [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function () {
+      img.removeAttribute('data-src');
+    };
   });
 });

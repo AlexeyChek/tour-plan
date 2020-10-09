@@ -164,6 +164,10 @@
         right: 0
         top: 0
         z-index: 100
+    &__item
+      &_mobile
+        &_visible
+          display: flex
     &__user
       &_mobile
         &_hidden
@@ -182,7 +186,7 @@
           flex-direction: column
           margin-left: 0
           margin-bottom: 18px
-    &__menu 
+    &__menu
       &_mobile
         display: flex
         flex-direction: column
@@ -195,7 +199,7 @@
       left: 0
       right: 0
       bottom: 0
-      top: 78px   
+      top: 78px
       &_visible
         position: fixed
         display: flex
@@ -206,7 +210,7 @@
         bottom: 0
         top: 72px
     &__container
-      overflow: auto  
+      overflow: auto
   .search
     &__input
       &_mobile
@@ -219,7 +223,7 @@
       padding: 0
       align-items: center
       justify-content: space-between
-      flex-direction: column 
+      flex-direction: column
       border: none
       background-color: $light
       cursor: pointer
@@ -508,7 +512,7 @@
         order: 1
       & div:nth-child(n + 3)
         margin-bottom: 28px
-      & div:last-child        
+      & div:last-child
         margin-bottom: 0
 @media (max-height: 500px)
   .modal
