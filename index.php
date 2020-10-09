@@ -163,7 +163,7 @@
             <span class="packages__old-price">$ 10,500</span>
             <div class="packages__buy">
               <strong class="packages__new-price">$ 8,500</strong>
-              <button class="packages__button">Book Now</button>
+              <button class="packages__button  button">Book Now</button>
             </div>
           </div>
           <!-- /.packages__body -->
@@ -198,7 +198,7 @@
             <span class="packages__old-price">$ 8,500</span>
             <div class="packages__buy">
               <strong class="packages__new-price">$ 3,000</strong>
-              <button class="packages__button">Book Now</button>
+              <button class="packages__button  button">Book Now</button>
             </div>
           </div>
           <!-- /.packages__body -->
@@ -233,7 +233,7 @@
             <span class="packages__old-price">$ 10,500</span>
             <div class="packages__buy">
               <strong class="packages__new-price">$ 9,500</strong>
-              <button class="packages__button">Book Now</button>
+              <button class="packages__button  button">Book Now</button>
             </div>
           </div>
           <!-- /.packages__body -->
@@ -268,7 +268,7 @@
             <span class="packages__old-price">$ 4,500</span>
             <div class="packages__buy">
               <strong class="packages__new-price">$ 2,500</strong>
-              <button class="packages__button">Book Now</button>
+              <button class="packages__button  button">Book Now</button>
             </div>
           </div>
           <!-- /.packages__body -->
@@ -303,7 +303,7 @@
             <span class="packages__old-price">$ 6,500</span>
             <div class="packages__buy">
               <strong class="packages__new-price">$ 3,500</strong>
-              <button class="packages__button">Book Now</button>
+              <button class="packages__button  button">Book Now</button>
             </div>
           </div>
           <!-- /.packages__body -->
@@ -324,7 +324,7 @@
     </h2>
     <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
       <input type="email" class="subscribe__input" placeholder="Your email address" name="email" required />
-      <button class="subscribe__button">Send</button>
+      <button class="subscribe__button  button">Send</button>
     </form>
   </div>
   <!-- /.newsletter-wrapper -->
@@ -445,25 +445,25 @@
       <div class="card" data-aos="fade-up" data-aos-delay="100">
         <img data-src="img/activity-1.jpg" src="#" alt="The curious corner of chamarel" class="card__image" />
         <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-        <button class="card__button">Book Now</button>
+        <button class="card__button button">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card" data-aos="fade-up" data-aos-delay="200">
         <img data-src="img/activity-2.jpg" src="#" alt="Gymkhana club golf course" class="card__image" />
         <h3 class="card__title">Gymkhana club golf course</h3>
-        <button class="card__button">Book Now</button>
+        <button class="card__button button">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card" data-aos="fade-up" data-aos-delay="300">
         <img data-src="img/activity-3.jpg" src="#" alt="Tamarind falls hiking trip - full day" class="card__image" />
         <h3 class="card__title">Tamarind falls hiking trip&nbsp;-&nbsp;full day</h3>
-        <button class="card__button">Book Now</button>
+        <button class="card__button button">Book Now</button>
       </div>
       <!-- /.card -->
       <div class="card" data-aos="fade-up" data-aos-delay="400">
         <img data-src="img/activity-4.jpg" src="#" alt="The blue marine discovery quest" class="card__image" />
         <h3 class="card__title">The blue marine discovery quest</h3>
-        <button class="card__button">Book Now</button>
+        <button class="card__button button">Book Now</button>
       </div>
       <!-- /.card -->
     </div>

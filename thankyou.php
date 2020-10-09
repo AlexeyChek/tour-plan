@@ -7,7 +7,7 @@
     <p class="thankyou__text">
       The manager will call you within 5 minutes.
     </p>
-    <a href="index.php" class="thankyou__return">Back to main page</a>
+    <a href="index.php" class="thankyou__return  button">Back to main page</a>
   </div>
 </section>
 <!-- /.thankyou -->

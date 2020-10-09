@@ -35,7 +35,7 @@
         </a>
         <form action="#" class="search navbar__search navbar__search_mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location" autofocus />
-          <button class="search__button">
+          <button class="search__button button">
             <img src="img/search.svg" alt="Icon: search" />
           </button>
         </form>
