@@ -175,7 +175,7 @@
       <div class="packages-сard" data-aos="fade-up" data-aos-delay="200">
         <div class="packages__container">
           <div class="packages__photo">
-            <img src="img/other-package-2.jpg" src="#" alt="LUX* Belle Mare" class="packages__image" />
+            <img data-src="img/other-package-2.jpg" src="#" alt="LUX* Belle Mare" class="packages__image" />
             <span class="packages__offer">Flash Offer</span>
           </div>
           <div class="packages__body">
