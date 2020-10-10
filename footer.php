@@ -1,4 +1,3 @@
-  <?php if ( substr_count( $_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip' ) ) ob_start("ob_gzhandler"); else ob_start(); ?> 
   <footer class="footer">
     <div class="container footer__container">
       <div class="footer-wrapper">
@@ -100,7 +99,7 @@
           </p>
           <ul class="footer__ul">
             <li class="footer__item footer__item_contact">
-              <img class="footer__icon" data-src="img/map-marker.svg" src="#" alt="Icon: map">
+              <img class="footer__icon footer__icon_first" data-src="img/map-marker.svg" src="#" alt="Icon: map">
               9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States
             </li>
             <li class="footer__item footer__item_contact">

@@ -1,7 +1,14 @@
-@media screen and (min-width: 993px)
+@media screen and (min-width: 992px)
   .button
     &:hover
       background-color: #ff0000
+  a
+    &:hover
+      color: $primary
+  .rules
+    &__link
+      &:hover
+        color: $primary
 @media (max-width: 1200px)
   .container
     max-width: 960px
@@ -422,15 +429,14 @@
       &_contact
         max-width: 100%
     &__rules
-      display: flex
-      justify-content: space-between
+      // display: flex
+      // justify-content: space-between
       left: auto
+      // width: 100%
       bottom: 32px
-      width: 100%
-      & li:not(:last-child)
-        margin: 0
-    &__rules
-      width: 100%
+      // width: 100%
+      // & li:not(:last-child)
+      //   margin: 0
   .partners
     right: auto
     left: 0
@@ -469,9 +475,12 @@
       margin-bottom: 37px
   .footer
     &__rules
-      width: 100%
+      // width: 100%
     &__additional
       margin-left: 0
+    &__rules
+      & li:not(:last-child)
+        margin-right: 9px
   .modal
     &__button
       &-wrapper
@@ -546,6 +555,7 @@
     &__contact
       &-details
         max-width: 100%
+        margin-bottom: 20px
       &-form
         max-width: 100%
     &__form
@@ -553,7 +563,20 @@
     &__item
       &_contact
         max-width: 100%
-
+        margin-bottom: 21px
+    &__text
+      font-size: 14px
+      line-height: 22px
+      margin-bottom: 19px
+    &__icon
+      margin-top: 5px
+      margin-left: 2px
+      margin-right: 11px
+      object-fit: contain
+      &_first
+        margin-left: 4px
+    &__message
+      margin-bottom: 16px
 @media (max-height: 500px)
   .modal
     &__dialog
